@@ -35,7 +35,7 @@ const Hero = ({ isLoaded }: HeroProps) => {
           data pipeline automation, and business intelligence to drive actionable insights.
         </p>
         <div className="hero-btns" ref={btnsRef}>
-          <a href="/resume/resume.pdf" target="_blank" className="btn">
+          <a href="./resume/resume.pdf" target="_blank" className="btn">
             Resume <MdDownload />
           </a>
           <div className="hero-social">
