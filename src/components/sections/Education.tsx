@@ -22,10 +22,13 @@ const educationData = [
 ];
 
 const certData = [
-  { title: 'Power BI Data Analyst', issuer: 'Microsoft', year: '2024' },
-  { title: 'Google Data Analytics', issuer: 'Google Professional Certificate', year: '2024' },
-  { title: 'AWS Data Analytics', issuer: 'Amazon Web Services', year: '2024' },
+  { title: 'Data Engineering with Microsoft Azure', issuer: 'FutureLearn', year: '2026' },
+  { title: 'Data Analytics with Python', issuer: 'FutureLearn', year: '2026' },
+  { title: 'Machine Learning for Image Data', issuer: 'University of Nottingham', year: '2026' },
+  { title: 'Getting Started with Generative AI', issuer: 'Pragmatic AI Labs', year: '2026' },
+  { title: 'Practical Machine Learning for AI', issuer: 'Cardiff University', year: '2025' },
   { title: 'Advanced Data Analytics', issuer: 'IIT Kanpur', year: '2024' },
+  { title: 'Data Analytical Professional', issuer: 'Edvancer', year: '2024' },
   { title: 'Tableau Certified', issuer: 'Edvancer', year: '2024' }
 ];
 
