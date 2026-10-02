@@ -1,16 +1,25 @@
-# My Portfolio Wesbite - Overview 🚀
+# Joshuva Jeemon — Portfolio
 
-This repository contains the open source version of my porfolio website.
-Do check it out!
+Live: https://joshuva1272.github.io/myportfolio_2026/
 
-## Instructions 🛠️
+A single-page, terminal-themed portfolio hosted on GitHub Pages.
 
-I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it🔴. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
+## Layout
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
+| Path | Purpose |
+| --- | --- |
+| `site/template.html` | Editable source: all content, styles and script |
+| `index.html` | Generated bundle that gets deployed (do not edit by hand) |
+| `tools/pack.py` | Writes `site/template.html` back into `index.html` |
+| `public/` | Static files copied next to `index.html` on deploy |
 
-![Portfolio-Preview](public/images/preview.png)
+## Workflow
+
+1. Edit `site/template.html`.
+2. Run `python tools/pack.py` to regenerate `index.html`.
+3. Preview locally: `python -m http.server 8765`, then open http://127.0.0.1:8765/
+4. Commit and push to `main`. GitHub Actions deploys automatically and fails if `index.html` is out of date (`python3 tools/pack.py --check`).
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+MIT, see [LICENSE](LICENSE).

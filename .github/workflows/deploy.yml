@@ -23,15 +23,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: "npm"
-      - name: Install dependencies
-        run: npm ci
-      - name: Build
-        run: npm run build
+      - name: Check index.html matches site/template.html
+        run: python3 tools/pack.py --check
+      - name: Stage site
+        run: |
+          mkdir dist
+          cp index.html dist/
+          cp -r public/. dist/ 2>/dev/null || true
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
